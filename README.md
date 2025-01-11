@@ -18,7 +18,6 @@ A comprehensive web application for analyzing countries across different contine
 - Next.js 15.1.4
 
 ### Programming Languages
-- TypeScript
 - GraphQL
 
 ### Web Technologies
