@@ -1,37 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Country Analysis Dashboard
+
+A comprehensive web application for analyzing countries across different continents. This interactive dashboard provides visual insights through charts and tables, allowing users to explore country-specific data including languages, capitals, and other key information.
+
+## Features
+
+- Interactive pie chart showing distribution of countries across continents
+- Bar chart displaying language statistics for countries
+- Detailed country information cards with capital cities and language details
+- Continent-based filtering capability
+- Responsive design for all device sizes
+- Dark mode support
+
+## Technologies Used
+
+### JavaScript Frameworks
+- React 18
+- Next.js 15.1.4
+
+### Programming Languages
+- TypeScript
+- GraphQL
+
+### Web Technologies
+- HTML5
+- CSS3
+
+### Libraries
+- Highcharts for data visualization
+- Apollo Client 3.12.5
+- Lucide Icons for UI elements
+
+### Build Tools
+- Webpack
+
+### Font Scripts
+- Lucide
+
+### Performance Optimization
+- Priority Hints
+- Next.js built-in optimizations
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm (Node Package Manager)
 
+### Installation Steps
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/Country-Analysis-Dashboard.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+```bash
+cd Country-Analysis-Dashboard
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open your browser and visit:
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application features a modern architecture using Next.js 15.1.4 with the new App Router. The frontend is built with React and uses Apollo Client for GraphQL data fetching. Highcharts is implemented for creating interactive and responsive data visualizations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Country-Analysis-Dashboard
+This project is licensed under the MIT License - see the LICENSE file for details.
