@@ -2,20 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Light theme variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --hover-bg: #f1f5f9;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --input-focus: #3b82f6;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Dark theme variables */
+[data-theme='dark'] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #e2e8f0;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #404040;
+  --hover-bg: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --input-focus: #60a5fa;
+}
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
+
+.dark-mode .navbar {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .navbar-brand h1 {
+  color: #ffffff;
+}
+
+.dark-mode .nav-link {
+  color: #b3b3b3;
+}
+
+.dark-mode .nav-link:hover {
+  color: #ffffff;
+}
+
+.dark-mode .nav-link.active {
+  color: #66b3ff;
+}
+
+/* Add this to your global CSS file */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
