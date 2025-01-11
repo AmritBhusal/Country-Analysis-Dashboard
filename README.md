@@ -76,9 +76,6 @@ http://localhost:3000
 
 The application features a modern architecture using Next.js 15.1.4 with the new App Router. The frontend is built with React and uses Apollo Client for GraphQL data fetching. Highcharts is implemented for creating interactive and responsive data visualizations.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
